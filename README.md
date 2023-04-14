@@ -6,7 +6,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 -------
 // References 
 
-// Map and some elements of the implementaton and features
+// Map /implementaton advice and features
 - https://leafletjs.com 
 - https://www.maptiler.com 
 - https://www.openstreetmap.org/copyright 
@@ -23,7 +23,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 - https://www.w3schools.com - Troubleshooting
 - https://ionicframework.com/docs/api/tabs - Ionic Tabs 
 - https://openai.com/blog/chatgpt - Troubleshooting/Advice 
- - Rodger McDermott coursework materials CM3131 Mobile Apllication Design and Development - Fundamental Ionic Understanding 
+- Rodger McDermott coursework materials CM3131 Mobile Apllication Design and Development - Fundamental Ionic Understanding 
 
 // Images/Videos 
 - Image/Video Content from Pexels are clearly labelled in file names - source: https://www.pexels.com all content is free to use/royalty free however attribution is given to creators in the file names for reference
