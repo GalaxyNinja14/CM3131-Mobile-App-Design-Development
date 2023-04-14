@@ -16,7 +16,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 -------
 // REFERENCES
 
-// Map / and advice around implementation 
+// Map / advice around implementation 
 - https://leafletjs.com 
 - https://www.maptiler.com 
 - https://www.openstreetmap.org/copyright 
