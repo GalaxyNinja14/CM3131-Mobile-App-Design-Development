@@ -10,7 +10,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 - https://leafletjs.com 
 - https://www.maptiler.com 
 - https://www.openstreetmap.org/copyright 
-All copyrights are respected and attribution is displayed on the map feature itself. 
+- All copyrights are respected and attribution is displayed on the map feature itself. 
 
 // National Grid Carbon Intensity data 
 - https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0
