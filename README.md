@@ -1,6 +1,6 @@
 # Greenr Web App
 CM3131 Mobile Application Design and Development 
-Nathan Stockdale
+// Nathan Stockdale(2003641)
 
 Greenr is a sustainbility app of the future to help guide users on how to make more eco concious decisions with the aim of contributing to positve change on the  'social impact' issues of climate change and the environment.
 -------
