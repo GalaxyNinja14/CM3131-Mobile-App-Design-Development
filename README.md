@@ -19,7 +19,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 - Intuative UI and design 
 - Media and content 
 - User Input 
-- Ionic Framwork and components 
+- Ionic Framework and components 
 - Local and persistent storage features
 -------
 // REFERENCES
