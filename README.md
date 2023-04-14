@@ -15,7 +15,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 -------
 // REFERENCES
 
-// Map /implementaton advice and features
+// Map / and advice around implementation 
 - https://leafletjs.com 
 - https://www.maptiler.com 
 - https://www.openstreetmap.org/copyright 
@@ -25,13 +25,13 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 - https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0
 
 // Weekly Sustainbility Goals and To-Do-List
-// - Contains altered/modified elements from in-class lab code taught by RGU Lecturer Rodger McDermott - Week 10 Data Persistence lab
+// - Contains altered/modified versions of some elements from in-class lab code building on original code taught by RGU Lecturer Rodger McDermott - Week 10 Data Persistence lab
 
 // Other sources of guidance and implementation advice / troubleshooting / inspiration 
 - https://ionicframework.com/docs/ - Inspiration/Implementation Advice 
 - https://www.w3schools.com - Troubleshooting
 - https://ionicframework.com/docs/api/tabs - Ionic Tabs 
-- https://openai.com/blog/chatgpt - Troubleshooting/Advice 
+- https://openai.com/blog/chatgpt - Troubleshooting
 - Class code - lecture examples and code I have written in class - Fundamental Understanding 
 
 // Images/Videos 
