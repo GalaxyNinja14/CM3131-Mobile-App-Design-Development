@@ -13,6 +13,14 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 - Helps establish a more eco friendly structure within your everday with goals and to-do-lists
 - Keep you updated on all sustainability news and issues
 - Allows you to explore and browse environmentally consious businesses within the city as well as others that will help you on your journey, through an easy to use map feature
+
+- Contains two API's
+- 3 individual yet interlinking pages 
+- Intuative UI and design 
+- Media and content 
+- User Input 
+- Ionic Framwork and components 
+- Local and persistent storage features
 -------
 // REFERENCES
 
