@@ -1,2 +1,3 @@
-# CM3131-Mobile-App-Design-Development
-Greenr Web App
+# Greenr Web App
+CM3131 Mobile Application Design and Development 
+Nathan Stockdale
