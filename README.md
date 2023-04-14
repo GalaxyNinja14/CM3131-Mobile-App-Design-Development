@@ -8,6 +8,11 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 -
 - This video covers the purpose of Greenr, it's functionalities and the design process in which it was developed. 
 -------
+// FUNCTIONS
+- Provides a guide to all things sustainability within the city 
+- Helps establish a more eco friendly structure within your everdaywith goals and to-do-lists
+- Allows you to explore and browse environmentally consious businesses within the city as well as other that will help you on your journey.
+-------
 // REFERENCES
 
 // Map /implementaton advice and features
