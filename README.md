@@ -26,7 +26,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 - https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0
 
 // Weekly Sustainbility Goals and To-Do-List
-// - Contains altered/modified versions of some elements from in-class lab code building on original code taught by RGU Lecturer Rodger McDermott - Week 10 Data Persistence lab
+- Contains altered/modified versions of some elements from in-class lab code building on original code taught by RGU Lecturer Rodger McDermott - Week 10 Data Persistence lab
 
 // Other sources of guidance and implementation advice / troubleshooting / inspiration 
 - https://ionicframework.com/docs/ - Inspiration/Implementation Advice 
