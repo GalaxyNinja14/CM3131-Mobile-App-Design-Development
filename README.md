@@ -12,7 +12,7 @@ Greenr is a sustainbility app of the future to help guide users on how to make m
 - Provides a guide to all things sustainability within the city 
 - Helps establish a more eco friendly structure within your everday with goals and to-do-lists
 - Keep you updated on all sustainability news and issues
-- Allows you to explore and browse environmentally consious businesses within the city as well as other that will help you on your journey, through an easy to use map feature
+- Allows you to explore and browse environmentally consious businesses within the city as well as others that will help you on your journey, through an easy to use map feature
 -------
 // REFERENCES
 
