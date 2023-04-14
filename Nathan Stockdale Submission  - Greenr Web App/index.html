@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenr App</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- API source code and stylesheet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+
+</head>
+
+<body>
+  <ion-app>
+    <ion-tabs id="tb-pages">
+      <!-- Homepage -->
+      <ion-tabs>
+        <ion-tab tab="home">
+          <ion-nav id="home-nav"></ion-nav>
+          <div id="home-page">
+            <ion-header>
+              <ion-toolbar>
+                <ion-title><img class="logo" height="44px" width="100px" src="Media/logo.png"></img></ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content>
+              <ion-card class="card3">
+                <ion-card-header>
+                  <ion-card-title>Greenr Lifestyle!</ion-card-title>
+                  <ion-card-subtitle>Say hello to your</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>Welcome to Greenr your one stop shop to a more sustainable lifestyle whether you already
+                    concisously aim to live by environmentally
+                    concious decisions in your everday or are at a loss as to how to do so. Greenr is here to help! </p>
+                </ion-card-content>
+              </ion-card>
+              <ion-card class="card">
+                <video width="100%" height="100%" autoplay muted loop>
+                  <source src="Media/pexels-shvets-production-7551328-640x360-25fps.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <ion-card-header>
+                  <ion-card-title>YOUR LIFE?</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>This app is designed to be a compass to helping you achive a more sustainable life, a lot of us
+                    long to do so but don't know where to start
+                    this is where Greenr comes in on this app you can:
+                  </p>
+                  <ion-item class="list">
+                    <ion-checkbox slot="end" checked>Get tips and advice on sustainbility</ion-checkbox>
+                  </ion-item>
+                  <ion-item class="list">
+                    <ion-checkbox slot="end" checked>View sustainable businesses</ion-checkbox>
+                  </ion-item>
+                  <ion-item class="list">
+                    <ion-checkbox slot="end" checked>Build your sustainbility plan</ion-checkbox>
+                  </ion-item>
+                  <ion-item class="list">
+                    <ion-checkbox slot="end" checked>Track your daily objectives</ion-checkbox>
+
+                  </ion-item>
+                </ion-card-content>
+              </ion-card>
+              <ion-card class="card3">
+                <ion-card-header>
+                  <ion-card-title>TO-DO-LIST</ion-card-title>
+                  <ion-card-subtitle>DAILY SUSTAINABILITY</ion-card-subtitle>
+                  <ion-card-subtitle><ion-input type="date" id="date"></ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <ion-item class="input">
+                    <ion-label id="lbl-text" position="floating">Record an activity?</ion-label>
+                    <ion-input id="input-text" type="text" placeholder="Enter text"></ion-input>
+                  </ion-item>
+                  <ion-button class="widget-buttons" id="btn-saveS" expand="block" fill="outline" size="small">LOCK IT
+                    IN</ion-button>
+                  <ion-item class="output">
+                    <ion-label position="stacked">Activities:</ion-label>
+                    <ion-list id="stored-data"></ion-list>
+                  </ion-item>
+                  <ion-button class="widget-buttons" id="btn-getS" expand="block" fill="outline" size="small"> REVIEW
+                    TODAYS ACHIEVEMENTS</ion-button>
+                </ion-card-content>
+              </ion-card>
+              </ion-card>
+              <ion-card>
+                <ion-card-header>GENERATE WEEKLY SUSTAINABLE GOALS</ion-card-header>
+                <ion-card-content>
+                  <ion-item>
+                    <ion-input label="Name:" type="text" value="" id="txt-db"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input label="Week:" type="number" value="" id="txt-version"></ion-input>
+                  </ion-item>
+                  <ion-button size="small" id="btn-create-db">Generate Ideas</ion-button>
+                  <ion-button size="small" id="btn-add-data">Create</ion-button>
+                  <ion-button size="small" id="btn-view-data">View Goals</ion-button>
+                </ion-card-content>
+              </ion-card>
+              <ion-content>
+                <ion-card>
+                  <ion-card-header>VIEW YOUR SUSTAINALE GOALS</ion-card-header>
+                  <ion-card-content>
+                    <ion-list id="list-objects"></ion-list>
+                    </ion-list>
+                  </ion-card-content>
+                </ion-card>
+              </ion-content>
+          </div>
+        </ion-tab>
+        <!-- Newsfeed Page -->
+        <ion-tab tab="feed">
+          <ion-nav id="feed-nav"></ion-nav>
+          <div id="feed-page">
+            <ion-header>
+              <ion-toolbar>
+                <ion-title> News </ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content>
+              <ion-card class="card3">
+                <ion-card-header>
+                  <ion-card-title>CARBON INTENSITY</ion-card-title>
+                  <ion-card-subtitle>SCOTLAND REGION</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <ion-card-item>
+                    <ion-list id="data-list" inset="true"></ion-list>
+                  </ion-card-item>
+                </ion-card-content>
+                <ion-card-content>
+                  <ion-card-subtitle>THE NATIONAL GRID</ion-card-subtitle>
+                  <p>UPDATED EVERY 30 MINS</p>
+                </ion-card-content>
+              </ion-card>
+              <ion-card class="card3">
+                <img alt="Silhouette of mountains" src="Media/connor-mollison-Vqkahb6W77Q-unsplash.jpg" />
+                <ion-card-header>
+                  <ion-card-title>THE GREEN CITY</ion-card-title>
+                  <ion-card-subtitle>Aberdeen</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>The city of Aberdeen is on track to swap it's status as Oil Capitol of Europe, to becoming a world leader as a sustainble city of the future.</p>
+                </ion-card-content>
+              </ion-card>
+              <ion-card class="card3">
+                <img alt="Silhouette of mountains" src="Media/TheBodyShop.jpg" />
+                <ion-card-header>
+                  <ion-card-title>NEW REFILL STATION</ion-card-title>
+                  <ion-card-subtitle>The Body Shop Aberdeen</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>The Body Shop Aberdeen are now offering an in-store refill experience where you can purchase an alluminuim refill bottle and enjoy all of your favourite products in a more sustainable way.</p>
+                </ion-card-content>
+              </ion-card>
+              <ion-card class="card3">
+                <img alt="Silhouette of mountains" src="Media/pexels-sam-forson-243138.jpg" />
+                <ion-card-header>
+                  <ion-card-title>WIND POWER</ion-card-title>
+                  <ion-card-subtitle>Energy of the future</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>Aberdeen and indeed Scotland as a whole is looking forward to a greenr future, driving this is renewable energy the country is fast becoming a leader in wind power.</p>
+                </ion-card-content>
+              </ion-card>
+              <ion-card class="card3">
+                <img alt="Silhouette of mountains" src="Media/pexels-polina-tankilevitch-3735218.jpg" />
+                <ion-card-header>
+                  <ion-card-title>RECYCLING</ion-card-title>
+                  <ion-card-subtitle>Doing your bit for the planet</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>If your not already seperating your household waste why not make a start?, recycling is collected weekly by most local authorities giving your waste products a new life.</p>
+                </ion-card-content>
+              </ion-card>
+              <ion-card class="card3">
+                <img alt="Silhouette of mountains" src="Media/pexels-vlada-karpovich-6634678.jpg" />
+                <ion-card-header>
+                  <ion-card-title>RE-USABLE PRODUCTS</ion-card-title>
+                  <ion-card-subtitle>Say goodby to single-use</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>Talking of more sustainble within your everday why not look swapping single use items for their re-usable conterparts such as re-usuable cotton pads, refill bottles or re-usable cups</p>
+                </ion-card-content>
+              </ion-card>
+            </ion-content>
+          </div>
+        </ion-tab>
+        <!-- Locations Page -->
+        <ion-tab tab="location">
+          <ion-nav id="location-nav"></ion-nav>
+          <div id="location-page">
+            <ion-header>
+              <ion-toolbar>
+                <ion-title> Sustainable Locations </ion-title>
+                <ion-button id="info-button" size="small">
+                  <ion-icon slot="icon-only" name="help-outline"></ion-icon>
+                </ion-button>
+                <ion-alert trigger="info-button" header="Information" sub-header="Sustainable Locations"
+                  message="Use this interactive map to explore areas within Aberdeen that promote,encourage and support a sustainable lifestyle"></ion-alert>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content>
+              <ion-card class="card2">
+                <ion-card-content class="card2">
+                  <div id="map">
+                    <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img
+                        src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+                  </div>
+                  <p><a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a
+                      href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap
+                      contributors</a></p>
+                </ion-card-content>
+              </ion-card>
+            </ion-content>
+          </div>
+        </ion-tab>
+
+        <!-- Navigation Bar -->
+        <ion-tab-bar class="buttons" slot="bottom">
+          <ion-tab-button tab="home">
+            <ion-icon name="home"></ion-icon>
+            <ion-ripple-effect></ion-ripple-effect>
+            Home
+          </ion-tab-button>
+          <ion-tab-button tab="feed">
+            <ion-icon name="newspaper"></ion-icon>
+            <ion-ripple-effect></ion-ripple-effect>
+            Newsfeed
+          </ion-tab-button>
+          <ion-tab-button tab="location">
+            <ion-icon name="location"></ion-icon>
+            <ion-ripple-effect></ion-ripple-effect>
+            Locations
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+
+
+  </ion-app>
+  <!-- Link/implementation of the Javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- (References) -->
+<!-- Image/Video Content from Pexels is clearly labelled in file name source: https://www.pexels.com all content is free to use/royalty free however attribution is given to creators in the file names for reference-->
+<!-- Image Content from Unsplash is clealy labelled in file name  source: https://unsplash.com all content is free to use/royalty free however attribution is given to creators in the file names for reference-->
+<!-- TheBodyShop.jpg was taken by myself Nathan Stockdale and is owned by me -  full permission without restriction is given to use within this application -->
+<!-- Logo.jpg was also design by myself Nathan Stockdale and is owned by me - full permission without restriction is given to use within this application -->
+<!-- Further expansive refernces are given on the app.js page -->
