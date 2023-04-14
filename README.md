@@ -5,7 +5,7 @@ CM3131 Mobile Application Design and Development
 Greenr is a sustainbility app of the future to help guide users on how to make more eco concious decisions with the aim of contributing to positive change on the  'social impact' issues of sustainability and the environment.
 -------
 // ONEDRIVE VIDEO LINK 
-- https://liverguac-my.sharepoint.com/:v:/g/personal/n_stockdale_rgu_ac_uk/Ee8TR3N8WLZJioXGx51I3FkBv-Bsg-4jtpKsuZelQZHt2Q?e=N8Mh2Q 
+- https://liverguac-my.sharepoint.com/:v:/g/personal/n_stockdale_rgu_ac_uk/Ee8TR3N8WLZJioXGx51I3FkBv-Bsg-4jtpKsuZelQZHt2Q 
 - This video covers the purpose of Greenr, it's functionalities and the design process in which it was developed. 
 -------
 // FUNCTIONALITIES
